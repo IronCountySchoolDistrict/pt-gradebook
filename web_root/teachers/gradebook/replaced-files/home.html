@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>~[text]psx.html.teachers_gradebook.home.gradebook[/text]</title>
+    <link href="/images/css/screen.css" rel="stylesheet" media="screen">
+    <link href="/images/css/print.css" rel="stylesheet" media="print">
+</head>
+
+<body id="ptGradebookLaunch">
+~[wc:commonscripts] ~[wc:teachers_header_css]~[wc:teachers_navigation_css] ~[SetPostValue:tabname=wgb]
+~[wc:teachers_nav_css] <!-- Start of shaded content table -->
+<h1>~[text:psx.html.teachers_gradebook.home.gradebook]</h1>
+
+<div class="box-round">
+    <h2>~[text:psx.html.teachers_gradebook.home.announcing_powerteacher,param:2.6]</h2>
+
+
+    <p>~[text:psx.html.teachers_gradebook.home.documentation]</p>
+    <ul class="text">
+        <li><a href="new_features_ptg_2_5.htm" class="popup">~[text:psx.html.teachers_gradebook.home.complete_list_of_features]</a>
+            ~[text:psx.html.teachers_gradebook.home.added_in_powerteacher]
+        </li>
+        <li><a href="https://powersource.pearsonschoolsystems.com/d/video" class="popup">~[text:psx.html.teachers_gradebook.home.video_demonstrations]</a>
+            ~[text:psx.html.teachers_gradebook.home.feature_overviews_and_ken]
+        </li>
+        <li>~[text:psx.html.teachers_gradebook.home.list_of] <a href="quick_entry_tips.htm" class="popup">~[text:psx.html.teachers_gradebook.home.quick_entry_tips]</a>
+        </li>
+        <li><a href="new_features_ptg_11_16.htm" class="popup">~[text:psx.html.teachers_gradebook.home.features_added_in,param:1.1
+            - 1.6]</a></li>
+    </ul>
+
+    <div
+    ~[if#altPTGAll.isAlternatePTGDeploymentEnabledBoth]class="ifIsMacHide ifIsWinHide"[else#altPTGAll]
+    ~[if#altPTGMac.isAlternatePTGDeploymentEnabledMac]class="ifIsMacHide"[/if#altPTGMac]
+    ~[if#altPTGWin.isAlternatePTGDeploymentEnabledWin]class="ifIsWinHide"[/if#altPTGWin][/if#altPTGAll]
+    id="launchPtgDiv">
+    <div class="box-bottom">
+        <a href="/teachers/launchgradebook" class="btnGBlaunch" data-track-event-click="true"
+           data-track-event-action="launch" data-track-event-category="PowerTeacher Grade Book"
+           data-track-event-data="Launch Grade Book">~[text:psx.html.teachers_gradebook.home.launchpowerteacher_gradebook]</a>
+    </div>
+
+</div>
+~[if.isAlternatePTGDeploymentEnabledMac]
+<div class="ifIsMacShow">
+    <div class="box-round" id="downloadPtgForMac">
+        <h2>~[text:psx.html.teachers_gradebook.home.step1downloadpowerteacher_gradebook]</h2>
+
+        <p>~[text:psx.html.teachers_gradebook.home.step1_explanation]</p>
+        <ol class="text">
+            <li>~[text:psx.html.teachers_gradebook.home.click_the_download_powerteacher_gradebook_button]</li>
+            <li>~[text:psx.html.teachers_gradebook.home.open_the_gradebookzip_file]</li>
+            <li>~[text:psx.html.teachers_gradebook.home.drag_gradebook_app_from_the_uncompressed_zip_archive]</li>
+        </ol>
+        <p>~[text:psx.html.teachers_gradebook.home.note_once_downloaded_teachers_can_launch]</p>
+
+        <div class="box-bottom">
+            <a href="/teachers/launchgradebookapp" class="btnGBlaunch" data-track-event-click="true"
+               data-track-event-action="launch" data-track-event-category="PowerTeacher Grade Book"
+               data-track-event-data="Launch Grade Book">Download PowerTeacher Gradebook</a>
+        </div>
+    </div>
+    <div class="box-round" id="runPtgForMac">
+        <h2>~[text:psx.html.teachers_gradebook.home.step2Header]</h2>
+        <ol class="text">
+            <li>~[text:psx.html.teachers_gradebook.home.double_click_the_gradebook_icon_in_your_application_folder]</li>
+            <li>
+                ~[text:psx.html.teachers_gradebook.home.log_into_powerteacher_gradebook_with_your_username_and_password]
+            </li>
+        </ol>
+    </div>
+</div>
+[/if]
+~[if.isAlternatePTGDeploymentEnabledWin]
+<div class="ifIsWinShow">
+    <div class="box-round" id="downloadPtgForWin">
+        <h2>~[text:psx.html.teachers_gradebook.home.step1downloadpowerteacher_gradebook]</h2>
+
+        <p>~[text:psx.html.teachers_gradebook.home.step1_explanation]</p>
+        <ol class="text">
+            <li>~[text:psx.html.teachers_gradebook.home.click_the_download_powerteacher_gradebook_button]</li>
+            <li>~[text:psx.html.teachers_gradebook.home.open_the_gradebookzip_file]</li>
+            <li>~[text:psx.html.teachers_gradebook.home.drag_gradebook_app_from_the_uncompressed_zip_archive_win]</li>
+        </ol>
+        <p>~[text:psx.html.teachers_gradebook.home.note_once_downloaded_teachers_can_launch_win]</p>
+
+        <div class="box-bottom">
+            <a href="/teachers/launchgradebookwin" class="btnGBlaunch" data-track-event-click="true"
+               data-track-event-action="launch" data-track-event-category="PowerTeacher Grade Book"
+               data-track-event-data="Launch Grade Book">Download PowerTeacher Gradebook</a>
+        </div>
+    </div>
+    <div class="box-round" id="runPtgForWin">
+        <h2>~[text:psx.html.teachers_gradebook.home.step2Header]</h2>
+        <ol class="text">
+            <li>~[text:psx.html.teachers_gradebook.home.double_click_the_gradebook_shortcut]</li>
+            <li>
+                ~[text:psx.html.teachers_gradebook.home.log_into_powerteacher_gradebook_with_your_username_and_password]
+            </li>
+        </ol>
+    </div>
+</div>
+[/if]
+</div>
+~[if.is.ptadmin.linked.account]
+<div class="box-round">
+    <h2>~[text]psx.html.teachers_gradebook.home.powerteacher_administrator[/text]</h2>
+
+    <p><img src="newPTGA.png" alt="PowerTeacher Administrator" width="50" height="50" class="left">~[text]psx.html.teachers_gradebook.home.powerteacher_administrator_is_an_application_for_distributin[/text]
+    </p>
+
+    <p>&nbsp;</p>
+
+    <div class="box-bottom">
+        <a href="/teachers/launchptadmin" target="_blank" class="btnPTAlaunch">~[text:psx.html.teachers_gradebook.home.launch_powerteacher_administrator]</a>
+    </div>
+</div>
+[/if]
+
+~[wc:teachers_footer_nf_css]
+<script type="text/javascript">
+    window.onload = function () {
+        if (!document.getElementsByTagName) return false;
+        var lnks = document.getElementsByTagName("a");
+        for (var i = 0; i < lnks.length; i++) {
+            if (lnks[i].className == "popup") {
+                lnks[i].onclick = function () {
+                    popUp(this.getAttribute("href"));
+                    return false;
+                }
+            }
+            if (lnks[i].className == "popup2") {
+                lnks[i].onclick = function () {
+                    popUp2(this.getAttribute("href"));
+                    return false;
+                }
+            }
+        }
+    }
+
+    function popUp(winURL) {
+        window.open(winURL, 'popup', 'width=800,height=600,scrollbars=yes')
+    }
+    function popUp2(winURL) {
+        window.open(winURL, 'popup2', '')
+    }
+</script>
+</body>
+</html>
