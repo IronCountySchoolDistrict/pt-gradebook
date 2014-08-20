@@ -18,4 +18,10 @@ $j(document).ready(function () {
     // Because one p tag was removed, the p tag that we're removing here becomes the second (index: 1)
     // p tag.
     newLaunchBox.find('p').eq(1).remove();
+
+    // Remove Gradebook page
+    $j('[href^="/teachers/gradebook/home.html"]').parent().remove();
+
+    // Rename Gradebook Launch header
+    $j('#ptgNewLaunchBox').find('h2').text('GradeBook Launch');
 });
