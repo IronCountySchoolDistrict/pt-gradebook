@@ -1,4 +1,3 @@
 <!-- Start PTGradebook custom content -->
 <script src="/scripts/PtGradebook/ptgradebook.js"></script>
-<script>console.log('hello from teachers');</script>
 <!-- End PTGradebook custom content -->
