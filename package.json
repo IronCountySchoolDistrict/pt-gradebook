@@ -15,5 +15,16 @@
   "bugs": {
     "url": "https://github.com/IronCountySchoolDistrict/pt-gradebook/issues"
   },
-  "homepage": "https://github.com/IronCountySchoolDistrict/pt-gradebook#readme"
+  "homepage": "https://github.com/IronCountySchoolDistrict/pt-gradebook#readme",
+  "eslintConfig": {
+    "globals": {
+      "window": true
+    },
+    "env": {
+      "browser": true
+    },
+    "rules": {
+      "quotes": [2, "single", "avoid-escape"]
+    }
+  }
 }
