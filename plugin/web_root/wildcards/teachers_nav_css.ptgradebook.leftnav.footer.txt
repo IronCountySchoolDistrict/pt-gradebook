@@ -1,3 +1,13 @@
 <!-- Start PTGradebook custom content -->
-<script src="/scripts/pt-gradebook/js/main.js"></script>
+<script>
+  require.config({
+    paths: {
+      ptGradebook: '/scripts/pt-gradebook/js/main'
+    }
+  });
+
+  require(['ptGradebook'], (ptGradebook) => {
+    ptGradebook.default();
+  });
+</script>
 <!-- End PTGradebook custom content -->
